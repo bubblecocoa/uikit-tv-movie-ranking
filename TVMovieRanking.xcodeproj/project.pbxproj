@@ -19,6 +19,7 @@
 		CBD829452B303F5C00026767 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CBD829442B303F5C00026767 /* Kingfisher */; };
 		CBD829482B303F7400026767 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBD829472B303F7400026767 /* RxAlamofire */; };
 		CBD8294B2B30418400026767 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294A2B30418400026767 /* Const.swift */; };
+		CBD8294E2B30434100026767 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294D2B30434100026767 /* TV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CBD829332B303EA000026767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD829352B303EA000026767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD8294A2B30418400026767 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		CBD8294D2B30434100026767 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +86,17 @@
 			isa = PBXGroup;
 			children = (
 				CBD8294A2B30418400026767 /* Const.swift */,
+				CBD8294C2B30433200026767 /* Entities */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CBD8294C2B30433200026767 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CBD8294D2B30434100026767 /* TV.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				CBD8292C2B303E9F00026767 /* ViewController.swift in Sources */,
 				CBD8294B2B30418400026767 /* Const.swift in Sources */,
 				CBD829282B303E9F00026767 /* AppDelegate.swift in Sources */,
+				CBD8294E2B30434100026767 /* TV.swift in Sources */,
 				CBD8292A2B303E9F00026767 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
