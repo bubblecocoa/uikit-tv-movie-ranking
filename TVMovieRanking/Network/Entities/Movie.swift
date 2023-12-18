@@ -5,6 +5,11 @@
 //  Created by 정동원 on 12/18/23.
 //
 
+struct MovieListModel: Decodable {
+    let page: Int
+    let results: [Movie]
+}
+
 struct Movie: Decodable {
     let title: String
     let overview: String

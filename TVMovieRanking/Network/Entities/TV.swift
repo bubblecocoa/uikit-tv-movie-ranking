@@ -5,6 +5,11 @@
 //  Created by 정동원 on 12/18/23.
 //
 
+struct TVListModel: Decodable {
+    let page: Int
+    let results: [TV]
+}
+
 struct TV: Decodable {
     let name: String
     let overview: String

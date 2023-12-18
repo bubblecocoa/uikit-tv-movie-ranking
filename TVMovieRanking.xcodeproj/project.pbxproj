@@ -21,6 +21,7 @@
 		CBD8294B2B30418400026767 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294A2B30418400026767 /* Const.swift */; };
 		CBD8294E2B30434100026767 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294D2B30434100026767 /* TV.swift */; };
 		CBD829502B305C1D00026767 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294F2B305C1D00026767 /* Movie.swift */; };
+		CBD829522B305D8100026767 /* MovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829512B305D8100026767 /* MovieResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CBD8294A2B30418400026767 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CBD8294D2B30434100026767 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		CBD8294F2B305C1D00026767 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CBD829512B305D8100026767 /* MovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				CBD8294D2B30434100026767 /* TV.swift */,
 				CBD8294F2B305C1D00026767 /* Movie.swift */,
+				CBD829512B305D8100026767 /* MovieResult.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD829522B305D8100026767 /* MovieResult.swift in Sources */,
 				CBD8292C2B303E9F00026767 /* ViewController.swift in Sources */,
 				CBD8294B2B30418400026767 /* Const.swift in Sources */,
 				CBD829502B305C1D00026767 /* Movie.swift in Sources */,
