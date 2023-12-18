@@ -20,6 +20,7 @@
 		CBD829482B303F7400026767 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBD829472B303F7400026767 /* RxAlamofire */; };
 		CBD8294B2B30418400026767 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294A2B30418400026767 /* Const.swift */; };
 		CBD8294E2B30434100026767 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294D2B30434100026767 /* TV.swift */; };
+		CBD829502B305C1D00026767 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8294F2B305C1D00026767 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CBD829352B303EA000026767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD8294A2B30418400026767 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CBD8294D2B30434100026767 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
+		CBD8294F2B305C1D00026767 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				CBD8294D2B30434100026767 /* TV.swift */,
+				CBD8294F2B305C1D00026767 /* Movie.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				CBD8292C2B303E9F00026767 /* ViewController.swift in Sources */,
 				CBD8294B2B30418400026767 /* Const.swift in Sources */,
+				CBD829502B305C1D00026767 /* Movie.swift in Sources */,
 				CBD829282B303E9F00026767 /* AppDelegate.swift in Sources */,
 				CBD8294E2B30434100026767 /* TV.swift in Sources */,
 				CBD8292A2B303E9F00026767 /* SceneDelegate.swift in Sources */,
