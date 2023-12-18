@@ -13,6 +13,11 @@
 		CBD8292F2B303E9F00026767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD8292D2B303E9F00026767 /* Main.storyboard */; };
 		CBD829312B303EA000026767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD829302B303EA000026767 /* Assets.xcassets */; };
 		CBD829342B303EA000026767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD829322B303EA000026767 /* LaunchScreen.storyboard */; };
+		CBD8293D2B303F2700026767 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CBD8293C2B303F2700026767 /* RxCocoa */; };
+		CBD8293F2B303F2700026767 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBD8293E2B303F2700026767 /* RxSwift */; };
+		CBD829422B303F3900026767 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CBD829412B303F3900026767 /* SnapKit */; };
+		CBD829452B303F5C00026767 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CBD829442B303F5C00026767 /* Kingfisher */; };
+		CBD829482B303F7400026767 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CBD829472B303F7400026767 /* RxAlamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD829452B303F5C00026767 /* Kingfisher in Frameworks */,
+				CBD829422B303F3900026767 /* SnapKit in Frameworks */,
+				CBD8293F2B303F2700026767 /* RxSwift in Frameworks */,
+				CBD829482B303F7400026767 /* RxAlamofire in Frameworks */,
+				CBD8293D2B303F2700026767 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,13 @@
 			dependencies = (
 			);
 			name = TVMovieRanking;
+			packageProductDependencies = (
+				CBD8293C2B303F2700026767 /* RxCocoa */,
+				CBD8293E2B303F2700026767 /* RxSwift */,
+				CBD829412B303F3900026767 /* SnapKit */,
+				CBD829442B303F5C00026767 /* Kingfisher */,
+				CBD829472B303F7400026767 /* RxAlamofire */,
+			);
 			productName = TVMovieRanking;
 			productReference = CBD829242B303E9F00026767 /* TVMovieRanking.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,12 @@
 				Base,
 			);
 			mainGroup = CBD8291B2B303E9F00026767;
+			packageReferences = (
+				CBD8293B2B303F2700026767 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				CBD829402B303F3900026767 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CBD829432B303F5C00026767 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CBD829462B303F7400026767 /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+			);
 			productRefGroup = CBD829252B303E9F00026767 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +384,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBD8293B2B303F2700026767 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CBD829402B303F3900026767 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		CBD829432B303F5C00026767 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CBD829462B303F7400026767 /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBD8293C2B303F2700026767 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBD8293B2B303F2700026767 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CBD8293E2B303F2700026767 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBD8293B2B303F2700026767 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		CBD829412B303F3900026767 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBD829402B303F3900026767 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CBD829442B303F5C00026767 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBD829432B303F5C00026767 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		CBD829472B303F7400026767 /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBD829462B303F7400026767 /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBD8291C2B303E9F00026767 /* Project object */;
 }
