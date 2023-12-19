@@ -28,6 +28,7 @@
 		CBD8295A2B3061AF00026767 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829592B3061AF00026767 /* NetworkProvider.swift */; };
 		CBD8295E2B307A5100026767 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8295D2B307A5100026767 /* ButtonView.swift */; };
 		CBD829602B30A55600026767 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8295F2B30A55600026767 /* ViewModel.swift */; };
+		CBD829632B31371700026767 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829622B31371700026767 /* NormalCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CBD829592B3061AF00026767 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		CBD8295D2B307A5100026767 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		CBD8295F2B30A55600026767 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CBD829622B31371700026767 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				CBD829272B303E9F00026767 /* AppDelegate.swift */,
 				CBD829292B303E9F00026767 /* SceneDelegate.swift */,
 				CBD8292B2B303E9F00026767 /* ViewController.swift */,
+				CBD829612B3136FF00026767 /* Cells */,
 				CBD8295F2B30A55600026767 /* ViewModel.swift */,
 				CBD8295D2B307A5100026767 /* ButtonView.swift */,
 				CBD829492B30417100026767 /* Network */,
@@ -121,6 +124,14 @@
 				CBD829512B305D8100026767 /* MovieResult.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBD829612B3136FF00026767 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBD829622B31371700026767 /* NormalCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 				CBD829522B305D8100026767 /* MovieResult.swift in Sources */,
 				CBD8292C2B303E9F00026767 /* ViewController.swift in Sources */,
 				CBD8295E2B307A5100026767 /* ButtonView.swift in Sources */,
+				CBD829632B31371700026767 /* NormalCollectionViewCell.swift in Sources */,
 				CBD829542B305E3400026767 /* Network.swift in Sources */,
 				CBD829562B30603300026767 /* TVNetwork.swift in Sources */,
 				CBD8294B2B30418400026767 /* Const.swift in Sources */,
