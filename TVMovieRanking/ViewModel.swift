@@ -8,7 +8,6 @@
 import RxSwift
 
 class ViewModel {
-    let disposeBag = DisposeBag()
     private let tvNetwork: TVNetwork
     private let movieNetwork: MovieNetwork
     
@@ -25,7 +24,7 @@ class ViewModel {
     
     struct Output {
         let tvList: Observable<[TV]>
-//        let movieList: Observable<MovieResult>
+        let movieResult: Observable<MovieResult>
     }
     
     func transform(input: Input) -> Output {
@@ -37,10 +36,17 @@ class ViewModel {
             return self.tvNetwork.getTopRatedList().map { $0.results }
         }
         
-        input.movieTrigger.bind {
-            print("Movie Trigger")
-        }.disposed(by: disposeBag)
+        let movieResult = input.movieTrigger.flatMapLatest { [unowned self] _ -> Observable<MovieResult> in
+            // 총 3개의 MovieListModel을 묶어야 하기 때문에 combineLatest 사용
+            return Observable.combineLatest(
+                self.movieNetwork.getUpcomingList(),
+                self.movieNetwork.getPopularList(),
+                self.movieNetwork.getNowPlayingList()
+            ) { upcoming, popular, nowPlaying -> MovieResult in
+                return MovieResult(upcoming: upcoming, popular: popular, nowPlaying: nowPlaying)
+            }
+        }
         
-        return Output(tvList: tvList)
+        return Output(tvList: tvList, movieResult: movieResult)
     }
 }

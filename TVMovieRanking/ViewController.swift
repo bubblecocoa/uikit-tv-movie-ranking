@@ -49,6 +49,10 @@ class ViewController: UIViewController {
         output.tvList.bind { tvList in
             print("TV List: \(tvList)")
         }.disposed(by: disposeBag) // VC가 메모리 해제될 때 바인딩이 끝나게 됨
+        
+        output.movieResult.bind { movieResult in
+            print("Movie Result: \(movieResult)")
+        }.disposed(by: disposeBag)
     }
     
     private func bindView() {
