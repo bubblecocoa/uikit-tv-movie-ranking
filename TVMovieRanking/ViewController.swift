@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         let output = viewModel.transform(input: input)
         
         output.tvList.bind { tvList in
-            print(tvList)
+            print("TV List: \(tvList)")
         }.disposed(by: disposeBag) // VC가 메모리 해제될 때 바인딩이 끝나게 됨
     }
     
