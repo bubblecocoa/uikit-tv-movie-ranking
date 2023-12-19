@@ -9,6 +9,16 @@ import UIKit
 import SnapKit
 import RxSwift
 
+// 레이아웃
+enum Section: Hashable {
+    case double
+}
+
+// 셀
+enum Item: Hashable {
+    case normal(TV)
+}
+
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     let buttonView = ButtonView()
