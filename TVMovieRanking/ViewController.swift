@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         setUI()
         bindViewModel()
         bindView()
+        tvTrigger.onNext(())
     }
     
     private func setUI() {
