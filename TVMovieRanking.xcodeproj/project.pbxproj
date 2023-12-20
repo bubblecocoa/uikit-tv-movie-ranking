@@ -32,6 +32,7 @@
 		CBD829652B32B73900026767 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829642B32B73900026767 /* Content.swift */; };
 		CBD829672B32C1FF00026767 /* BigImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829662B32C1FF00026767 /* BigImageCollectionViewCell.swift */; };
 		CBD829692B3306C200026767 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829682B3306C200026767 /* ListCollectionViewCell.swift */; };
+		CBD8296B2B3308CF00026767 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8296A2B3308CF00026767 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		CBD829642B32B73900026767 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		CBD829662B32C1FF00026767 /* BigImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBD829682B3306C200026767 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBD8296A2B3308CF00026767 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				CBD829622B31371700026767 /* NormalCollectionViewCell.swift */,
 				CBD829662B32C1FF00026767 /* BigImageCollectionViewCell.swift */,
 				CBD829682B3306C200026767 /* ListCollectionViewCell.swift */,
+				CBD8296A2B3308CF00026767 /* HeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD829522B305D8100026767 /* MovieResult.swift in Sources */,
+				CBD8296B2B3308CF00026767 /* HeaderView.swift in Sources */,
 				CBD8292C2B303E9F00026767 /* ViewController.swift in Sources */,
 				CBD8295E2B307A5100026767 /* ButtonView.swift in Sources */,
 				CBD829632B31371700026767 /* NormalCollectionViewCell.swift in Sources */,
