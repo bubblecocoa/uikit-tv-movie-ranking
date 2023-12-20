@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setDataSource()
         bindViewModel()
         bindView()
         tvTrigger.onNext(())
@@ -45,8 +46,6 @@ class ViewController: UIViewController {
     private func setUI() {
         self.view.addSubview(buttonView)
         self.view.addSubview(collectionView)
-        
-        collectionView.backgroundColor = .blue
         
         buttonView.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
@@ -63,8 +62,13 @@ class ViewController: UIViewController {
         let input = ViewModel.Input(tvTrigger: tvTrigger, movieTrigger: movieTrigger)
         let output = viewModel.transform(input: input)
         
-        output.tvList.bind { tvList in
-            print("TV List: \(tvList)")
+        output.tvList.bind { [weak self] tvList in
+            var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+            let items = tvList.map { Item.normal($0) }
+            let section = Section.double
+            snapshot.appendSections([section])
+            snapshot.appendItems(items, toSection: section)
+            self?.dataSource?.apply(snapshot)
         }.disposed(by: disposeBag) // VC가 메모리 해제될 때 바인딩이 끝나게 됨
         
         output.movieResult.bind { movieResult in
