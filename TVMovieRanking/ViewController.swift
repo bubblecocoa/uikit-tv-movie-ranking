@@ -79,8 +79,21 @@ class ViewController: UIViewController {
             self?.dataSource?.apply(snapshot)
         }.disposed(by: disposeBag) // VC가 메모리 해제될 때 바인딩이 끝나게 됨
         
-        output.movieResult.bind { movieResult in
+        output.movieResult.bind { [weak self] movieResult in
             print("Movie Result: \(movieResult)")
+            var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+            
+            let bigImageList = movieResult.nowPlaying.results.map { Item.bigImage($0) }
+            let bannerSection = Section.banner
+            snapshot.appendSections([bannerSection])
+            snapshot.appendItems(bigImageList, toSection: bannerSection)
+            
+            let horizontalSection = Section.horizontal("Popular Movies")
+            let normalList = movieResult.popular.results.map { Item.normal(Content(movie: $0)) }
+            snapshot.appendSections([horizontalSection])
+            snapshot.appendItems(normalList, toSection: horizontalSection)
+            
+            self?.dataSource?.apply(snapshot)
         }.disposed(by: disposeBag)
     }
     
@@ -128,6 +141,7 @@ class ViewController: UIViewController {
     private func createHorizontalSection() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
         
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.4), heightDimension: .absolute(320))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
@@ -157,6 +171,16 @@ class ViewController: UIViewController {
             case .normal(let contentData):
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NormalCollectionViewCell.id, for: indexPath) as? NormalCollectionViewCell
                 cell?.configure(title: contentData.title, review: contentData.vote, desc: contentData.overview, ImageURL: contentData.posterURL)
+                
+                return cell
+            case .bigImage(let movieData):
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BigImageCollectionViewCell.id, for: indexPath) as? BigImageCollectionViewCell
+                cell?.configure(title: movieData.title, overview: movieData.overview, review: movieData.vote, url: movieData.posterURL)
+                
+                return cell
+            case .list(let movieData):
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BigImageCollectionViewCell.id, for: indexPath) as? BigImageCollectionViewCell
+                cell?.configure(title: movieData.title, overview: movieData.overview, review: movieData.vote, url: movieData.posterURL)
                 
                 return cell
             }
