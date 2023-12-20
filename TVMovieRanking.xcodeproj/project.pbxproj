@@ -30,6 +30,7 @@
 		CBD829602B30A55600026767 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8295F2B30A55600026767 /* ViewModel.swift */; };
 		CBD829632B31371700026767 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829622B31371700026767 /* NormalCollectionViewCell.swift */; };
 		CBD829652B32B73900026767 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829642B32B73900026767 /* Content.swift */; };
+		CBD829672B32C1FF00026767 /* BigImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829662B32C1FF00026767 /* BigImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		CBD8295F2B30A55600026767 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CBD829622B31371700026767 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBD829642B32B73900026767 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		CBD829662B32C1FF00026767 /* BigImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				CBD829622B31371700026767 /* NormalCollectionViewCell.swift */,
+				CBD829662B32C1FF00026767 /* BigImageCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				CBD8295A2B3061AF00026767 /* NetworkProvider.swift in Sources */,
 				CBD829282B303E9F00026767 /* AppDelegate.swift in Sources */,
 				CBD8294E2B30434100026767 /* TV.swift in Sources */,
+				CBD829672B32C1FF00026767 /* BigImageCollectionViewCell.swift in Sources */,
 				CBD8292A2B303E9F00026767 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
