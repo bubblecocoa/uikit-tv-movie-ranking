@@ -29,6 +29,7 @@
 		CBD8295E2B307A5100026767 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8295D2B307A5100026767 /* ButtonView.swift */; };
 		CBD829602B30A55600026767 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8295F2B30A55600026767 /* ViewModel.swift */; };
 		CBD829632B31371700026767 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829622B31371700026767 /* NormalCollectionViewCell.swift */; };
+		CBD829652B32B73900026767 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD829642B32B73900026767 /* Content.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		CBD8295D2B307A5100026767 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		CBD8295F2B30A55600026767 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CBD829622B31371700026767 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBD829642B32B73900026767 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		CBD8294C2B30433200026767 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				CBD829642B32B73900026767 /* Content.swift */,
 				CBD8294D2B30434100026767 /* TV.swift */,
 				CBD8294F2B305C1D00026767 /* Movie.swift */,
 				CBD829512B305D8100026767 /* MovieResult.swift */,
@@ -226,6 +229,7 @@
 				CBD829562B30603300026767 /* TVNetwork.swift in Sources */,
 				CBD8294B2B30418400026767 /* Const.swift in Sources */,
 				CBD829602B30A55600026767 /* ViewModel.swift in Sources */,
+				CBD829652B32B73900026767 /* Content.swift in Sources */,
 				CBD829582B3060ED00026767 /* MovieNetwork.swift in Sources */,
 				CBD829502B305C1D00026767 /* Movie.swift in Sources */,
 				CBD8295A2B3061AF00026767 /* NetworkProvider.swift in Sources */,
