@@ -63,7 +63,7 @@ class BigImageCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private func configure(title: String, overview: String, review: String, url: String) {
+    func configure(title: String, overview: String, review: String, url: String) {
         titleLabel.text = title
         reviewLabel.text = review
         descLabel.text = overview
